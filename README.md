@@ -2,6 +2,13 @@
 
 A CLI tool to transpose notes by half steps
 
+## Table of Contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [Support](#support)
+- [Contributing](#contributing)
+
 ## Install
 
     ❯ gem install note-transpose
@@ -26,19 +33,17 @@ A CLI tool to transpose notes by half steps
     ❯ note-transpose -2 D# G7 F Am7 Cadd7 --pref-flat
     => Db F7 Eb Gm7 Bbadd7
 
-## In code
+You can even include the module in your code if you need that for some reason:
 
     require 'note-transpose'
 
     NoteTranspose.transpose(-3, "C", "F", "Am", "G")
     # => ["A", "D", "Gbm", "E"]
 
+## Support
+
+Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.
+
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-
-Problems with the code? [Create a new issue](https://github.com/vyder/note-transpose/issues/new) and I will take a look when I have some time.
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).
