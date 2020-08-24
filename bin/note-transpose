@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+
+require 'note-transpose'
+
+PREF_FLAT_OPT = "--pref-flat"
+
+def print_help
+    basename = File.basename(__FILE__)
+    puts <<EOF
+
+Usage: #{basename} [-]<number half steps> <notes> [#{PREF_FLAT_OPT}]
+#{PREF_FLAT_OPT}     Always uses flat notes in output instead of sharp ones
+
+Example:
+❯ #{basename} +1 C G F Am
+=> #{NoteTranspose.transpose(1, %w(C G F Am))}
+
+❯ #{basename} 2 C G F Am
+=> #{NoteTranspose.transpose(2, %w(C G F Am))}
+
+❯ #{basename} -2 D# G7 F Am7 Cadd7
+=> #{NoteTranspose.transpose(-2, %w(D# G7 F Am7 Cadd7))}
+
+❯ #{basename} -2 D# G7 F Am7 Cadd7 --pref-flat
+=> #{NoteTranspose.transpose(-2, %w(D# G7 F Am7 Cadd7), pref_flat: true)}
+EOF
+end
+
+# Check input
+input      = ARGV.flatten.map { |x| x.dup }
+half_steps = input.shift.to_i
+
+if input.nil? || input.empty? || half_steps.zero?
+    print_help
+    exit 1
+end
+
+pref_flat = !input.delete(PREF_FLAT_OPT).nil?
+
+puts <<EOF
+
+=> #{NoteTranspose.transpose(half_steps, input, pref_flat: pref_flat)}
+EOF
