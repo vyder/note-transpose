@@ -37,7 +37,9 @@ end
 
 pref_flat = !input.delete(PREF_FLAT_OPT).nil?
 
+result = NoteTranspose.transpose(half_steps, input, pref_flat: pref_flat)
+
 puts <<EOF
 
-=> #{NoteTranspose.transpose(half_steps, input, pref_flat: pref_flat)}
+=> #{result.join(' ')}
 EOF

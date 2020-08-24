@@ -34,7 +34,7 @@ module NoteTranspose
             note.downcase!
             begin
                 m = note.match /^[a-g](#|b)?/
-                actual_note = m[0].downcase
+                actual_note = m[0]
 
                 index = NOTES[:flat].find_index(actual_note)
 
@@ -57,14 +57,13 @@ module NoteTranspose
                     transposed_note = source[index]
                 end
 
-                transposed_notes << note.gsub(actual_note.downcase, transposed_note.downcase).capitalize
+                transposed_notes << note.gsub(actual_note, transposed_note).capitalize
             rescue
                 puts "'#{note.capitalize}' is not a valid note!"
                 exit 1
             end
         end
 
-        # %w(D A G Bm).join ' '
-        transposed_notes.join ' '
+        transposed_notes
     end
 end
