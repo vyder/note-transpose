@@ -1,4 +1,7 @@
 # Note Transpose
+[![Gem Version](https://badge.fury.io/rb/note-transpose.svg)](https://badge.fury.io/rb/note-transpose)
+[![Build Status](https://travis-ci.org/vyder/note-transpose.svg?branch=master)](https://travis-ci.org/vyder/note-transpose)
+[![Inline docs](http://inch-ci.org/github/vyder/note-transpose.svg?branch=master)](http://inch-ci.org/github/vyder/note-transpose)
 
 A CLI tool to transpose notes by half steps
 
