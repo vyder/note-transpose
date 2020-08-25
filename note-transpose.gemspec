@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name    = 'note-transpose'
-  spec.version = '0.1.2'
+  spec.version = '0.1.3'
   spec.authors = ['Vidur Murali']
   spec.email   = ['vidur@monkeychai.com']
 
