@@ -18,27 +18,32 @@ A CLI tool to transpose notes by half steps
     ❯ note-transpose --help
 
     Usage: note-transpose [-]<number half steps> <notes> [--pref-flat]
-    --pref-flat     Always uses flat notes in output instead of sharp ones
 
-    Examples:
-    ❯ note-transpose +1 C G F Am
-    => Db Ab Gb Bbm
+      Options:
+        --pref-flat     Always uses flat notes in output instead of sharp ones
 
-    ❯ note-transpose 2 C G F Am
-    => D A G Bm
+      Examples:
+        ❯ note-transpose +1 C G F Am
+        => Db Ab Gb Bbm
 
-    ❯ note-transpose -2 D# G7 F Am7 Cadd7
-    => C# F7 Eb Gm7 Bbadd7
+        ❯ note-transpose 2 C G F Am
+        => D A G Bm
 
-    ❯ note-transpose -2 D# G7 F Am7 Cadd7 --pref-flat
-    => Db F7 Eb Gm7 Bbadd7
+        ❯ note-transpose -2 D# G7 F Am7 Cadd7
+        => C# F7 Eb Gm7 Bbadd7
+
+        ❯ note-transpose -2 D# G7 F Am7 Cadd7 --pref-flat
+        => Db F7 Eb Gm7 Bbadd7
 
 You can even include the module in your code if you need that for some reason:
 
     require 'note-transpose'
 
-    NoteTranspose.transpose(-3, "C", "F", "Am", "G")
-    # => ["A", "D", "Gbm", "E"]
+    NoteTranspose.transpose(3, "D#", "F", "Bm", "G7")
+    # => ["F#", "Ab", "Dm", "Bb7"]
+
+    NoteTranspose.transpose(3, "D#", "F", "Bm", "G7", pref_flat: true)
+    # => ["Gb", "Ab", "Dm", "Bb7"]
 
 ## Support
 
