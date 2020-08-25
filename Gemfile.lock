@@ -11,6 +11,7 @@ GEM
     io-console (0.5.6)
     irb (1.2.4)
       reline (>= 0.0.1)
+    rake (13.0.1)
     reline (0.1.4)
       io-console (~> 0.5)
     rspec (3.9.0)
@@ -39,6 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   note-transpose!
+  rake (~> 13.0.1)
   rspec (~> 3.9.0)
   rubygems-tasks (~> 0.2.5)
   simplecov (~> 0.19.0)
