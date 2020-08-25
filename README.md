@@ -51,10 +51,7 @@ You can even include the module in your code if you need that for some reason:
 
 ## Documentation
 
-You can find the docs hosted at:
-
-- [This repo's Github pages](https://vyder.github.io/note-transpose/)
-- [RubyGems](https://rubygems.org/gems/note-transpose)
+You can find the documentation [here](https://vyder.github.io/note-transpose/)
 
 ## Support
 
