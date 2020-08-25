@@ -15,7 +15,6 @@ Gem::Specification.new do |spec|
   spec.executables   = 'note-transpose'
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler',        '~> 2.0.2'
   spec.add_development_dependency 'rspec',          '~> 3.9.0'
   spec.add_development_dependency 'rubygems-tasks', '~> 0.2.5'
   spec.add_development_dependency 'simplecov',      '~> 0.19.0'
