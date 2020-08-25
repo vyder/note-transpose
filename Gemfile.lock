@@ -38,6 +38,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 2.0.2)
   note-transpose!
   rspec (~> 3.9.0)
   rubygems-tasks (~> 0.2.5)
