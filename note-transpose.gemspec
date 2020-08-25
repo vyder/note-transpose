@@ -14,4 +14,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'bin'
   spec.executables   = 'note-transpose'
   spec.require_paths = ['lib']
+
+  spec.add_development_dependency 'rspec',          '~> 3.9.0'
+  spec.add_development_dependency 'rubygems-tasks', '~> 0.2.5'
+  spec.add_development_dependency 'yard',           '~> 0.9.25'
 end
