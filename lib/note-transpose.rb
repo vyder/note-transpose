@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 
 # List of musical notes, as sharps and flats
 NOTES = {
