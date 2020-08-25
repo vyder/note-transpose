@@ -1,3 +1,9 @@
+# Docs metadata
 .yardoc/
+
+# Artifacts
 pkg/
 *.gem
+
+# Test
+coverage/

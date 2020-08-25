@@ -58,8 +58,7 @@ module NoteTranspose
 
                 transposed_notes << note.gsub(actual_note, transposed_note).capitalize
             rescue
-                puts "'#{note.capitalize}' is not a valid note!"
-                exit 1
+                raise "'#{note.capitalize}' is not a valid note!"
             end
         end
 
