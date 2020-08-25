@@ -6,6 +6,7 @@ A CLI tool to transpose notes by half steps
 
 - [Install](#install)
 - [Usage](#usage)
+- [Documentation](#documentation)
 - [Support](#support)
 - [Contributing](#contributing)
 
@@ -44,6 +45,13 @@ You can even include the module in your code if you need that for some reason:
 
     NoteTranspose.transpose(3, "D#", "F", "Bm", "G7", pref_flat: true)
     # => ["Gb", "Ab", "Dm", "Bb7"]
+
+## Documentation
+
+You can find the docs hosted at:
+
+- [This repo's Github pages](https://vyder.github.io/note-transpose/)
+- [RubyGems](https://rubygems.org/gems/note-transpose)
 
 ## Support
 
